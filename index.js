@@ -32,11 +32,11 @@ client.once(Events.ClientReady, c => {
     var text = textList[Math.floor(Math.random(0,textList.length))];
     c.user.setPresence({
 		activities: [
-		  { name: text /* `${client.guilds.cache.size} Servers!` */, type: ActivityType.Watching },
+		  { name: text /* `${client.guilds.cache.size} Servers!` */, type: ActivityType.Watching, setInterval: 5000},
 		],
 		status: "online",
 	  });
-},60000)
+},5000)
  
 });
 
